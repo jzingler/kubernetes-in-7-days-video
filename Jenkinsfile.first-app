@@ -22,7 +22,7 @@ podTemplate(label: label,
     emptyDirVolume(mountPath: '/var/lib/docker', memory: false)
   ]) {
 
-    master(label) {
+    node(label) {
       
       // Checkout code    
       container('jnlp') {
